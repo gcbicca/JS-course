@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercising events DOM</title>
+</head>
+<body>
+    <h1>Sum calculator</h1>
+    <input type="number" name="number" id="inumber"> +
+    <input type="number" name="number2" id="inumber2">
+    <input type="button" value="Sum" onclick="summing()">
+    <p id="res">A soma dos valores...</p>
+
+    <script>
+        function summing() {
+            var tn1 = document.querySelector('input#inumber')
+            var tn2 = document.querySelector('input#inumber2')
+            var res = document.querySelector('p#res')
+            var n2 = Number(tn1.value)
+            var n1 = Number(tn2.value)
+            var sum = n1 + n2
+            res.innerHTML = `A soma dos valores ${n1} e ${n2} é <strong> ${sum}</strong>` // STRING INTERPOLADA
+        }
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box iteractive</title>
+
+    <style>
+        div {
+        background-color: rgb(2, 37, 54);
+        height: 100px;
+        width: 100px;
+        line-height: 5;
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        Waiting!
+    </div>
+
+    <script>
+        var action = document.querySelector('div#box')
+        action.addEventListener('click', cú)
+        action.addEventListener('mouseenter', enter)
+        action.addEventListener('mouseout', exitou)
+        function cú() {
+            action.innerText = 'Clicked'
+            action.style.background = 'blue' 
+        }
+        
+        function enter() {
+            action.innerHTML = 'Entered'
+            action.style.background = 'green'
+        }
+
+        function exitou() {
+            action.innerHTML = 'Exited'
+            action.style.background = 'purple'
+        }
+    </script>
+</body>
+</html>

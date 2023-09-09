@@ -1,0 +1,12 @@
+.main-box {
+    background-color: white;
+    width: 500px;
+    height: 400px;
+    box-shadow: 1px 2px 3px black;
+    border-radius: 3%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
