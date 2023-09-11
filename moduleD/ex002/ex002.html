@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="compounds/main-title.css">
+    <link rel="stylesheet" href="compounds/main-body.css">
+    <link rel="stylesheet" href="compounds/main-section.css">
+    <link rel="stylesheet" href="compounds/main-form.css">
+    <link rel="stylesheet" href="compounds/main-copy.css">
+    <link rel="stylesheet" href="compounds/main-box.css">
+    <link rel="stylesheet" href="compounds/main-img.css">
+    <title>Age checker</title>
+</head>
+<body class="main-body">
+    <header>
+        <h1 class="main-title">Age checker</h1>
+    </header>
+    <section class="main-section">
+        <form class="main-form" autocomplete="on">
+            <div>
+                <label for="iyear">Year of Birth:</label>
+                <input type="number" name="year" id="iyear" required min="1900" max="9999">
+            </div>
+
+            <div>
+                <label for="isex">Sex:</label>
+                <label for="iman"></label><input type="radio" name="gender" value="male" id="imale"> Male</label>
+                <label for="ifemale"></label><input type="radio" name="gender" value="female" id="ifemale" checked> Female</label>
+            </div>
+
+            <button onclick="ageChecker()" type="submit">Submit</button>
+        </form>
+        <div class="main-box">
+            <p id="msg">Preencha os dados acima para ver o resultado!</p>
+            <img id="main-img" src="" alt="">
+        </div>
+    </section>
+    <footer class="main-footer">
+        <p class="main-copy">&copy; CursoemVídeo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
