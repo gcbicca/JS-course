@@ -10,35 +10,35 @@
     <link rel="stylesheet" href="compounds/main-copy.css">
     <link rel="stylesheet" href="compounds/main-box.css">
     <link rel="stylesheet" href="compounds/main-img.css">
-    <title>Age checker</title>
+    <link rel="stylesheet" href="compounds/main.button.css">
+    <title>Let's count</title>
 </head>
 <body class="main-body">
     <header>
-        <h1 class="main-title">Age checker</h1>
+        <h1 class="main-title">Let's count</h1>
     </header>
     <section class="main-section">
         <div class="main-form">
             <div>
-                <label for="iyear">Year of Birth</label>
-                <input type="number" name="year" id="iyear">
+                <label for="istart">Start</label>
+                <input type="number" name="start" id="istart" value="0">
             </div>
-
             <div>
-                <label for="isex">Sex:</label>
-                <label for="iman"></label><input type="radio" name="gender" value="male" id="imale"> Male</label> 
-                <!-- Preicsa ter o mesmo name para vincular as duas tags -->
-                <label for="ifemale"></label><input type="radio" name="gender" value="female" id="ifemale" checked> Female</label>
+                <label for="iend">End</label>
+                <input type="number" name="end" id="iend" value="10">
             </div>
-
-            <input type="button" value="Verificar" onclick="ageChecker()">
-            
-            <!-- a tag button com type submit da refresh na página quando clicada. -->
+            <div>
+                <label for="ipace">Pace</label>
+                <input type="number" name="pace" id="ipace" value="1">
+            </div>
         </div>
+        <input id="main-button" type="button" value="Count" onclick="count()">
+
         <div class="main-box">
-            <p id="msg">Preencha os dados acima para ver o resultado!</p>
-            <img id="main-img" src="" alt="">
+            <p id="msg">Preparing the count...</p>
         </div>
     </section>
+
     <footer class="main-footer">
         <p class="main-copy">&copy; CursoemVídeo</p>
     </footer>
